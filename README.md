@@ -4,7 +4,7 @@
 
 <img src="https://github.com/ERAalex/PREVIEW_project_205_kafedra_website/blob/main/website_school.jpg">
 <p>
-  <a href="https://www.linkedin.com/in/alexander-espinosa-rozov-b3b270121/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"></a>
+  <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white">
 </p>
 <br>
 <p><a href="https://school.gym205.ru/esp_kafedra" target="_blank">➡️ Check out my work - Website. Department of Foreign Languages. School 205. </a></p>
