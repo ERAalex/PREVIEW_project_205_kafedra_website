@@ -1,0 +1,66 @@
+{% extends "index.html" %}
+
+
+      {% block title %}
+    <title>Кафедра испанского языка</title>
+      {% endblock %}
+
+      {% block style %}
+    <link rel="stylesheet" href="static/css/esp_kaf.css" />
+        {% endblock %}
+
+
+            {% block main_name %}
+
+            <h2 class="tm-hero-title">Кафедра испанского языка</h2>
+            <p class="tm-hero-subtitle">
+              Испанский язык является приоритетным направлением в нашей гимназии.
+              <br>Именно благодаря нашим учителям нам удается быть лучшими как в городских олимпиадах, так и
+                в главных конкурсах города.<br>
+                На фото. Севилья.
+            </p>
+
+            {% endblock %}
+
+
+{% block main_articles %}
+
+
+      <div class="container">
+
+            <div class="row tm-content-box"><!-- first row -->
+                <div class="col-lg-12 col-xl-12">
+                    <div class="tm-intro-text-container">
+                        <h2 class="tm-text-primary mb-4 tm-section-title">Наша кафедра</h2>
+
+                        {% for item in esp_main_frase_1 %}
+                        <p class="mb-4 tm-intro-text">
+                        {{ item.text|safe }}  </p>
+                        {% endfor %}
+
+                    </div>
+                    <br>
+                    <div class="tm-intro-text-container">
+                        <h2 class="tm-text-primary mb-4 tm-section-title"></h2>
+
+                        {% for item in esp_main_frase_2 %}
+                            <div class="tm-gallery">
+                                <a href="{{item.image}}" >
+                                <h4>{{ item.title }}</h4></a>
+
+                            </div>
+
+                        <p class="mb-4 tm-intro-text">
+                        {{ item.text|safe }} </p> <br>
+
+                        {% endfor %}
+
+                    </div>
+                </div>
+
+            </div><!-- first row -->
+
+      </div>
+
+
+            {% endblock %}

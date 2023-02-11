@@ -1,0 +1,49 @@
+
+
+a {
+  transition: all 0.3s ease;
+  color: #29346c;
+}
+
+
+#infinite {
+	background-color: #222;
+  background-image: url(../img/esp_kaf_fon.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  min-height: 375px;
+  position: relative;
+}
+
+.tm-navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.tm-navbar.scroll {
+  background-color: white;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.tm-nav-link {
+  color: #f9d4d8;
+}
+
+
+.tm-down-arrow {
+  	color: #FFF;
+    cursor: pointer;
+    background: #a16b1a;
+    padding: 15px 40px;
+    transition: all 0.3s ease;
+}
+
+.tm-down-arrow:hover,
+.tm-down-arrow:focus {
+  color: #FFF;
+  background: #953d14;
+  padding: 20px 50px;
+}

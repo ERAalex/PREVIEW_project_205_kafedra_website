@@ -1,0 +1,71 @@
+{% extends "index.html" %}
+
+
+      {% block title %}
+    <title>Новости</title>
+      {% endblock %}
+
+      {% block style %}
+    <link rel="stylesheet" href="static/css/novosti.css" />
+        {% endblock %}
+
+
+            {% block main_name %}
+
+            <h2 class="tm-hero-title">Новости</h2>
+            <p class="tm-hero-subtitle">
+              Все самые актуальные новости нашей кафедры.
+              <br>Мы стараемся держать Вас в курсе актуальных событий кафедры.<br>
+                На фото. Вечерняя Гранада.
+            </p>
+
+            {% endblock %}
+
+
+{% block main_articles %}
+
+
+      <div class="container">
+
+            <div class="row tm-content-box"><!-- first row -->
+                <div class="col-lg-12 col-xl-12">
+                    <div class="tm-intro-text-container">
+                        <center><h2 class="tm-text-primary mb-4 tm-section-title">Новости нашей кафедры</h2></center>
+                        <br><br><br>
+
+                        {% for item in novosti_1 %}
+                        <p class="mb-4 tm-intro-text">
+                        {{ item.text|safe }}  </p>
+                        {% endfor %}
+
+                    </div>
+                    <br>
+                    <div class="tm-intro-text-container">
+
+                            {% for item in novosti_2 %}
+                        {% if item.image %}
+                        <a href="{{item.image}}">
+                            <figure class="tm-testimonial-item">
+                              <center><img src="{{item.image}}" alt="Image" class="img-fluid mx-auto"></center>
+                            </figure>
+                        </a>
+                        {% endif %}
+
+                            <h4><font color="blue"> {{ item.title }}</font></h4>
+                            <br>
+                            </div>
+
+                            <p class="mb-4 tm-intro-text">
+                            {{ item.text|safe }} </p> <br>
+
+                            {% endfor %}
+
+                    </div>
+                </div>
+
+            </div><!-- first row -->
+
+      </div>
+
+
+            {% endblock %}
